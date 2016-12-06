@@ -19,7 +19,7 @@ RUN       set -x \
 	        && gosu nobody true
 
 # Set default Logstash version
-ENV 			LOGSTASH_VERSION 2.3.1-1_all
+ARG 			LOGSTASH_VERSION=2.3.1-1_all
 
 RUN 			wget https://download.elastic.co/logstash/logstash/packages/debian/logstash_${LOGSTASH_VERSION}.deb -O /tmp/logstash.deb && \
     			dpkg -i /tmp/logstash.deb ; \
