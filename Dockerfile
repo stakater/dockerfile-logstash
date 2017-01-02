@@ -33,6 +33,12 @@ RUN 			wget https://download.elastic.co/logstash/logstash/packages/debian/logsta
 
 ENV 			PATH /opt/logstash/bin:$PATH
 
+# Add Defualt logstash config
+ADD       default-logstash.conf /etc/logstash/conf.d/logstash.conf
+
+# expose default config folder
+VOLUME    /etc/logstash/conf.d
+
 # Make daemon service dir for logstash and place file
 # It will be started and maintained by the base image
 RUN       mkdir -p /etc/service/logstash
