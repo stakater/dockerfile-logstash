@@ -2,7 +2,7 @@
 
 ### Supported tags and respective Dockerfile links
 * 5.2, 5.2.1, latest ([5.2/Dockerfile](https://github.com/stakater/dockerfile-logstash/blob/master/5.2/Dockerfile))
-* 2.3.1 ([2.3.1/Dockerfile](https://github.com/stakater/dockerfile-logstash/blob/master/2.3.1/Dockerfile))
+* 2.3 ([2.3/Dockerfile](https://github.com/stakater/dockerfile-logstash/blob/master/2.3/Dockerfile))
 
 For more information Please look at the version specific README files with the dockerfiles.
 
