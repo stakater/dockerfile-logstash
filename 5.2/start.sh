@@ -21,7 +21,4 @@ then
 	set -- su-exec stakater "$@";
 fi
 
-# As argument is not related to logstash,
-# then assume that user wants to run his own process,
-# for example a `bash` shell to explore this image
 exec "$@"
